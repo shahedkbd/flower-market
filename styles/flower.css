@@ -36,8 +36,15 @@ body{
 }
 
 .navbar,
-.hero_section{
-    /* margin: 30px 150px; */
+.hero_section,
+.product_section{
+    margin: 30px 150px;
+}
+
+.navbar,
+.hero_section,
+.product_section{
+    max-width: 1140px;
 }
 /* Colors */
 .orange-color{
@@ -102,7 +109,58 @@ body{
     width: 100%;
 }
 
+/* Product Section */
+.product_section{
+    align-items: end;
+    width: 90vw;
+    justify-self: center;
+    margin-bottom: 80px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.product_section_content, .product_details{
+    text-align: center;
+}
+.our_plants{
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-bottom: 16px;
+}
+.our_plants_description{
+    font-size: 1.37rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.product_details_title{
+    font-size: 1.37rem;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.product_details_price{
+    font-size: 1.37rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.add-to-cart{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 19px 80px;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+}
+.all_products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 30px;
 
+}
+.product_img{
+    width: 100%;
+}
 
 /* Mobile Responsive 576px */
 @media screen and (max-width: 576px) {
@@ -126,5 +184,18 @@ body{
     .fresh_flower{
         margin-bottom: 10px;
     }
+    .all_products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 20px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+    .add-to-cart{
+        padding: 20px 30px;
+    }
+   
+
 
 }
