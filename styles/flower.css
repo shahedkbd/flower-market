@@ -43,7 +43,8 @@ body{
 
 .navbar,
 .hero_section,
-.product_section{
+.product_section,
+.flower_plants_section{
     max-width: 1140px;
 }
 /* Colors */
@@ -114,7 +115,6 @@ body{
     align-items: end;
     width: 90vw;
     justify-self: center;
-    margin-bottom: 80px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -146,10 +146,11 @@ body{
 .add-to-cart{
     font-size: 1rem;
     font-weight: 600;
-    padding: 19px 80px;
+    padding: 19px 60px;
     background-color: #E95A08;
     color: white;
     border: none;
+    width: 100%;
 }
 .all_products{
     display: grid;
@@ -161,6 +162,53 @@ body{
 .product_img{
     width: 100%;
 }
+
+
+/* Flower & Plants Lover Section */
+.flower_plants_section{
+    display: flex;
+    width: 90vw;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-left: 0;
+    margin-right: 0;
+    column-gap: 80px;
+    
+}
+
+.flower_planks_title{
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.flower_planks_description{
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.flower-store{
+    width: 100%;
+}
+.flower_plants_section_right{
+    width: 60%;
+}
+.flower-store{
+    width: 100%;
+    max-width: 440px;
+    max-height: 500px;
+    position: relative;
+    top: -90px;
+    z-index: 1;
+}
+ .trusted-badge{
+    width: 200px;
+    position: relative;
+    top: 0px;
+    left: 320px;
+    z-index: 3;
+ }
+
 
 /* Mobile Responsive 576px */
 @media screen and (max-width: 576px) {
@@ -195,7 +243,21 @@ body{
     .add-to-cart{
         padding: 20px 30px;
     }
-   
-
+    .trusted-badge{
+        display: none;
+    }
+    .flower-store{
+        position:relative;
+        top: auto;
+        margin-top: 20px;
+    }
+    .flower_plants_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .flower_plants_section_right{
+    width: 90%;
+    margin-top: 20px;
+}
 
 }
