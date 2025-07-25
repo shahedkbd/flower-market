@@ -45,7 +45,8 @@ body{
 .hero_section,
 .product_section,
 .flower_plants_section,
-.latest-deals_section{
+.latest-deals_section,
+.footer-section{
     max-width: 1140px;
 }
 /* Colors */
@@ -208,7 +209,22 @@ body{
     top: 0px;
     left: 320px;
     z-index: 3;
+    
  }
+ /* Trusted Sticker Animation */
+ @-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.trusted-badge {
+    -webkit-animation: rotating 3s linear infinite;
+}
+
 
 /* Latest Deals Section */
 .latest-deals_section{
@@ -326,6 +342,49 @@ body{
 }
 
 
+/* Footer Section */
+.footer-section{
+    display: flex;
+    justify-self: center;
+    column-gap: 90px;
+    width: 1140px;
+    text-align: left;
+    padding: 50px 0px;
+
+}
+.logo-text{
+    width: 360px;
+}
+.footer-menu{
+    list-style: none;
+}
+.footer-menu li{
+    margin-bottom: 20px;
+}
+.footer-quicklink{
+    list-style: none;
+}
+.footer-quicklink li{
+    margin-bottom: 20px;
+}
+.social-logo{
+    display: flex;
+    justify-content: center;
+   
+}
+.social-logo img{
+    margin-right: 20px;
+}
+
+.logo-text img{
+    margin-bottom: 20px;
+}
+.logo-text h4{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+
 
 
 /* Mobile Responsive 576px */
@@ -363,6 +422,12 @@ body{
     }
     .trusted-badge{
         display: none;
+    }
+    .hide{
+        display: none;
+    }
+    .flower_planks_title{
+        font-size: 2.8rem;
     }
     .flower-store{
         position:relative;
@@ -412,4 +477,18 @@ body{
         font-size: 1.2rem;
     }
 
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+        column-gap: 0;
+        width: 90%;
+        padding: 20px;
+        text-align: left;
+    }
+    .social-logo{
+        display: flex;
+        justify-content: left;
+
+}
 }
